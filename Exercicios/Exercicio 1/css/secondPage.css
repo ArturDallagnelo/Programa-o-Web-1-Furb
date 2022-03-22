@@ -1,0 +1,9 @@
+form.form{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+ }
+ 
+ form.form input:not(:last-child){
+    margin-bottom: 10px;
+ }
