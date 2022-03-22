@@ -1,0 +1,22 @@
+.container {
+    background: black;
+    display: inline-block;
+    border: 3px solid black;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 80px);
+    grid-template-rows: repeat(5, 80px);
+    grid-gap: 3px;
+  }
+  
+  .cell {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: Arial;
+    font-size: 3rem;
+    font-weight: bold;
+    background: white;
+  }
