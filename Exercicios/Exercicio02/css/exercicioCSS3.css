@@ -1,0 +1,60 @@
+header{
+    border-width: 5px;
+    border-style: dashed;
+    border-color: red;
+}
+
+p{
+    background-color: skyblue;
+    width: 50%;
+}
+
+table{
+    border-width: 5px;
+    border-style: dashed;
+    border-top: black;
+    border-left: black;
+    border-right: black;
+    text-align: right;
+}
+
+table tr th{
+    background-color: green;
+}
+
+.ultima td{
+    font-weight: bold;
+    background-color: black;
+    color:white;
+}
+
+table td:hover{
+    font-weight: bold;
+    background-color: yellow;
+    color:white;
+}
+
+a{
+    font-weight: bold;
+    color:black;
+    border-color: blue;
+    background-color: blue;
+    padding: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+a:hover{
+    background-color: green;
+    font-weight: bold;
+    color: red;
+    border-color: green;
+}
+
+footer{
+    border-style: dotted;
+    border-color: blue;
+    font-family: myFirstFont;
+    src: url(https://fonts.google.com/specimen/Hurricane);
+}

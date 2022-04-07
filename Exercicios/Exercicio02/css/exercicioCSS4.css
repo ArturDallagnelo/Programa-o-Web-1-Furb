@@ -1,0 +1,43 @@
+header{
+    border-width: 5px;
+    border-style: dashed;
+    border-color: red;
+}
+
+ul li {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+form{
+    transform: rotate(-90deg);
+    transform-origin: left top 0;
+}
+
+ul li:first-child{
+    font-weight: bold;
+}
+
+a{
+    font-weight: bold;
+    color:black;
+    border-color: blue;
+    background-color: blue;
+    padding: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+a:hover{
+    background-color: green;
+    font-weight: bold;
+    color: red;
+    border-color: green;
+}
+
+footer{
+    border-style: dotted;
+    border-color: blue;
+    font-family: myFirstFont;
+    src: url(https://fonts.google.com/specimen/Hurricane);
+}
