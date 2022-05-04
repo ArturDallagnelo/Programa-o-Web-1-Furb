@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo cookies 2</title>
+    <script>
+        function getCookie(pCookie) {
+            var vetCookies = document.cookie.split(';');
+            for (var i = 0; i < vetCookies.length; i++) {
+                linhaCookie = vetCookies[i].trim();
+                if (linhaCookie.indexOf(pCookie) == 0) {
+                    return linhaCookie.substring((pCookie.length+1),linhaCookie.length);
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <h4>Exemplo cookies 2</h4>
+    <div id="identifica"></div>
+    <script>
+        if (document.cookie != '') {
+            document.getElementById('identifica').innerHTML = document.cookie;
+        } else {
+            document.getElementById('identifica').innerHTML = 'Não há cookie setado!';
+        }
+    </script>
+    <button onclick="document.getElementById('identifica').innerHTML=document.cookie">Conteúdo do cookie</button>
+    <button onclick="document.getElementById('identifica').innerHTML='O conteúdo de <i>username</i> é ('+getCookie('username')+')';">Pega username</button>
+    <button onclick="document.getElementById('identifica').innerHTML='O conteúdo de <i>nome</i> é ('+getCookie('nome')+')';">Pega nome</button><br>
+    <a href="exemploCookies1.html">Voltar p&aacute;gina</a>
+</body>
+</html>

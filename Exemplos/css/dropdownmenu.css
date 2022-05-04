@@ -1,0 +1,70 @@
+header {
+    padding: 10px;
+    font-size: larger;
+    background-color: red;
+}
+nav {
+    padding: 10px 0px;
+    background-color: skyblue;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+}
+nav a:hover {
+    text-decoration: underline;
+    color: darkgray;
+}
+nav li {
+    list-style: none;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.menuPrincipal > li {
+    display: inline-block;
+}
+.menuPrincipal a {
+    padding: 0px 5px;
+}
+.menuPrincipal > li:hover .subMenu {
+    /*display: block;*/
+    visibility: visible;
+}
+.menuVertical > li {
+    display: block;
+}
+.menuVertical a {
+    padding: 0px 5px;
+}
+.menuVertical > li:hover .subMenu {
+    /*display: block;*/
+    visibility: visible;
+}
+.subMenu {
+    background-color: lightgray;
+    visibility: hidden;
+    /*display: none;*/
+    position: fixed;
+    padding: 5px;
+}
+.subMenu a {
+    color: skyblue;
+}
+
+@media screen and (max-width: 600px) {
+    .verticalVisivel {
+        display: none;
+    }
+    .horizontalVisivel {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .verticalVisivel {
+        display: block;
+    }
+    .horizontalVisivel {
+        display: none;
+    }
+}

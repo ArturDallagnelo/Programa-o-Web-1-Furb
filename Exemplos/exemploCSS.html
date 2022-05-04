@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo CSS</title>
+    <style>
+        .maisExterno > p {
+            background-color: red;
+        }
+        /*.maisExterno + p {*/
+        .maisExterno ~ p {
+            background-color: yellow;
+        }
+        /*.maisExterno::after {*/
+        .maisExterno::before {
+            content: url('img/lock.jfif');
+        }
+        .paragrafo::first-letter {
+            font-size: x-large;
+            color: blue;
+        }
+        .paragrafo::selection {
+            background-color: yellow;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <p>N&atilde;o acontece nada aqui.</p>
+    <div class="maisExterno">
+        <p class="paragrafo">Primeiro par&aacute;grafo</p>
+        <p>Segundo par&aacute;grafo</p>
+        <div>
+            <p>Par&aacute;grafo dentro de SECTION.</p>
+        </div>
+        <p>Terceiro par&aacute;grafo</p>
+    </div>
+    <div>Primeiro DIV fora do outro.</div>
+    <p>Primeiro par&aacute;grafo fora do DIV.</p>
+    <p>Segundo par&aacute;grafo fora do DIV.</p>
+</body>
+</html>

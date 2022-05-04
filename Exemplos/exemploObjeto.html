@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo objeto</title>
+    <script src="js/classPessoa.js"></script>
+    <script>
+        var vPessoa = new pessoa("");
+        function instanciaPessoa() {
+            vPessoa = new pessoa(document.getElementById('nmPessoa').value);
+        }
+
+        function alteraPessoa() {
+            vPessoa.setNome(document.getElementById('nmPessoa').value);
+        }
+
+        function mostraPessoa() {
+            document.getElementById('contObjeto').innerHTML = 'O nome é: '+vPessoa.getNome();
+        }
+
+        function alteraDtNasc() {
+            vPessoa.setDtNasc(document.getElementById('dtNasc').value);
+        }
+
+        var outraPessoa = {
+            nome: "Marcos",
+            sobrenome: "Cardoso",
+            dataNasc : "1972-12-16",
+            idade: 49
+        };
+    </script>
+</head>
+<body>
+    <h4>Exemplo objeto JavaScript</h4>
+    <label for="nmPessoa">Nome pessoa: </label>
+    <input id="nmPessoa" name="nmPessoa" type="text" autofocus>
+    <button onclick="instanciaPessoa()">Instancia pessoa</button>
+    <button onclick="alteraPessoa()">Altera pessoa</button><br>
+    <label for="dtNascimento">Data nasc.:</label>
+    <input type="date" id="dtNasc" name="dtNasc">
+    <button onclick="alteraDtNasc()">Altera data</button>
+    <button onclick="document.getElementById('contObjeto').innerHTML = 'Data: '+vPessoa.getDtNasc();">Mostra data</button><br>
+    <button onclick="mostraPessoa()">Mostra pessoa</button>
+    <button onclick="document.getElementById('contObjeto').innerHTML = 'Idade: '+vPessoa.idade();">Mostra idade</button><br>
+    <button onclick="document.getElementById('contObjeto').innerHTML = 'Nome: '+outraPessoa.nome+' '+outraPessoa.sobrenome;">Nome outraPessoa</button>
+    <button onclick="document.getElementById('contObjeto').innerHTML = 'Idade: '+outraPessoa.idade;">idade outraPessoa</button><br>
+    <div id="contObjeto"></div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo cookies 1</title>
+    <script>
+        function setaCookie(pNome,pValor,pSegundos) {
+            var data = new Date();
+            data.setTime(data.getTime() + (pSegundos*1000));
+            document.cookie = pNome+"="+pValor+";expires="+data.toGMTString();
+        }
+
+        function terminaCookie(pNome) {
+            var data = new Date();
+            document.cookie += pNome+"=;expires="+data.toString();
+        }
+    </script>
+</head>
+<body>
+    <h4>Exemplo cookies 1</h4>
+    <button onclick="setaCookie('username','mcardoso',10)">Seta cookie 1</button>
+    <button onclick="terminaCookie('username')">Termina cookie 1</button><br>
+    <button onclick="setaCookie('nome','Marcos Cardoso',15)">Seta cookie 2</button>
+    <button onclick="terminaCookie('nome')">Termina cookie 2</button><br>
+    <a href="exemploCookies2.html">Mudar p&aacute;gina</a>
+</body>
+</html>

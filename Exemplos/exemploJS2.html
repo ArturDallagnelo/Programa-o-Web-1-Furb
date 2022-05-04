@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo JS 2</title>
+    <style>
+        .classe1 {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: aqua;
+            color: blue;
+        }
+
+        .classe2 {
+            font-weight: bold;
+            font-size: xx-large;
+        }
+    </style>
+    <script>
+        function ativaClasse(pClasse) {
+            document.getElementById('exemplo').classList.add(pClasse);
+        }
+        function removeClasse(pClasse) {
+            document.getElementById('exemplo').classList.remove(pClasse);
+        }
+        function alternaClasse(pClasse1,pClasse2) {
+            document.getElementById('exemplo').classList.replace(pClasse1,pClasse2);
+        }
+    </script>
+</head>
+<body>
+    <div id="exemplo">Conteúdo da DIV.</div>
+    <button onclick="ativaClasse('classe1')">Ativa classe1</button>
+    <button onclick="ativaClasse('classe2')">Ativa classe2</button><br>
+    <button onclick="removeClasse('classe1')">Remove classe1</button>
+    <button onclick="removeClasse('classe2')">Remove classe2</button><br>
+    <button onclick="alternaClasse('classe1','classe2')">classe1 -> classe2</button>
+    <button onclick="alternaClasse('classe2','classe1')">classe2 -> classe1</button><br>
+</body>
+</html>
