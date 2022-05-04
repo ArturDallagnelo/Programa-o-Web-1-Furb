@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+  <link rel="stylesheet" href="css/cadastro.css">
+  <script src="js/cadastro.js"></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="usuario posicao" onclick=redirecionar();>
+            <img src="img/logo.png" id="logo">
+        </div>
+    </header>
+
+    <form method="post" id="cadastro">
+        <label for="pf">Pessoa Fisica</label>
+        <input type="radio" name="pf" id="pf">
+
+        <label for="pj">Pessoa Juridica</label>
+        <input type="radio" name="pj" id="pj">
+
+        <br>
+
+        <label for="nome">Nome</label>
+        <input type="text" class="campos" name="nome" id="nome">
+
+        <label for="sobrenome">Sobrenome</label>
+        <input type="text" class="campos" name="sobrenome" id="sobrenome">
+
+        <label for="data">Data de nascimento</label>
+        <input type="date" class="campos" name="data" id="data">
+
+        <label for="email">E-mail</label>
+        <input type="email" class="campos" name="email" id="email">
+
+        <label for="senha">Senha</label>
+        <input type="password" class="campos" name="senha" id="senha">
+
+        <label for="select">Opções</label>
+        <select class="campos" name="select" id="select">
+            <option value="normal">Normal</option>
+            <option value="custom">Custom</option>
+        </select>
+
+        <input type="button" id="botao" value="Enviar" onclick="enviar();">
+    </form>
+
+    <footer class="rodape">
+        <h1>Artur Dallagnelo</h1>
+    </footer>
+</body>
+</html>
