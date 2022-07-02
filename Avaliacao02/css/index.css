@@ -1,0 +1,136 @@
+/*GERAL*/
+*{
+    background-color: #38afda;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: arial, helvetica, sans-serif;
+    font-size: 12px;
+    /*text-align: center;*/
+}
+
+/*CABEÇALHO*/
+.cabecalho{
+    height: 150px;
+    width: 100%;
+}
+
+.posicao {
+    display: inline-block;
+}
+
+#logo{
+    height: 100px;
+    width: 200px;
+}
+
+#logo2{
+    height: 50px;
+    width: 50px;
+}
+
+.titulo{
+    transform: translate(800px, 0px);
+}
+
+.usuario{
+    transform: translate(1450px, 0px)
+}
+
+/*MENU*/
+nav{
+    background-color: lightblue;
+    width: 100%;
+}
+
+.menuHorizontal{
+    display: inline-block;
+    /*text-align: center;*/
+}
+
+.menuHorizontal li {
+    float: left;
+}
+
+.menu{
+    list-style:none;
+    border:1px solid #c0c0c0;
+    float:left;
+}
+
+.menu li{
+    position:relative;
+    float:left;
+    border-right:1px solid #c0c0c0;
+}
+
+.menu li a{
+    text-decoration:none;
+    display:block;
+    color: #333333;
+    border: 1px #38afda solid;
+    padding: 10px;
+}
+
+.menu li a:hover{
+    -moz-box-shadow:0 3px 10px 0 #CCC;
+    -webkit-box-shadow:0 3px 10px 0 #ccc;
+    text-shadow:0px 0px 5px #fff;
+    background-color: #38afda;
+    color: #ffffff;
+}
+
+.menu li ul{
+    position:absolute;
+    top:25px;
+    left:0;
+    background-color:#fff;
+    display:none;
+}
+
+.menu li:hover ul, .menu li.over ul{
+    display:block;
+}
+
+.menu li ul li{
+    border:1px solid #c0c0c0;
+    display:block;
+    width:150px;
+}
+
+
+/*CORPO*/
+
+#imagem{
+    height: 700px;
+    width: 100%;
+}
+
+main{
+    background-color: lightblue;
+}
+
+.paginaInicial{
+    bottom: 0;
+    left: 0;
+}
+
+/*RODAPE*/
+.rodape{
+    background-color: silver;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 150px;
+    width: 100%;
+    border: 1px;
+    border-style: solid;
+    border-color: red;
+}
+
+.rodape h1{
+    background-color: silver;
+    text-align: center;
+}
