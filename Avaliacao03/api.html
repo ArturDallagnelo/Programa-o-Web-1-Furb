@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Avaliação 03</title>
+    <link rel="stylesheet" href="css/api.css" type="text/css"/>
+    <script src="js/api.js"></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logo posicao" onclick=redirecionar();>
+            <img src="img/logo.png" id="logo">
+        </div>
+
+        <h1 class="posicao titulo">Multi Sports</h1>
+
+        <div class="usuario posicao">
+            <img src="img/user.png" id="logo2">
+        </div>
+    </header>
+
+    <label for="id">ID: </label>
+    <input type="text" id="id">
+    <button onclick="fazerRequisicaoGet();">Consultar</button>
+
+    <input id="resposta">
+    <br>
+    <div id="resposta2"></div>
+    <br>
+
+    <label for="nome">Nome: </label>
+    <input type="text" id="nome">
+
+    <label for="email">E-mail: </label>
+    <input type="text" id="email">
+    <button onclick="fazerRequisicaoDelete();">Deletar</button>
+    <input id="resposta3">
+    <br>
+    <br>
+
+    <label for="nome2">Nome: </label>
+    <input type="text" id="nome2">
+
+    <label for="email2">E-mail: </label>
+    <input type="text" id="email2">
+    <button onclick="fazerRequisicaoPost();">Inserir</button>
+    <input id="resposta4">
+
+
+<!--    <div id="request"></div>-->
+<!--    <div id="request"></div>-->
+
+
+    <footer class="rodape">
+        <h1>Artur Dallagnelo</h1>
+    </footer>
+</body>
+</html>

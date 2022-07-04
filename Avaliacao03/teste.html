@@ -1,0 +1,40 @@
+<script type="text/javascript" language="javascript">
+
+    function enviar()
+
+    {
+
+        var requisicao = new XMLHttpRequest();
+        var id = 1;
+
+        requisicao.addEventListener("load", listener);
+
+        requisicao.open("GET", "https://bu.furb.br/mcardoso/progWeb/apiRestAval.php/cadastro/" + id);
+
+        // requisicao.setRequestHeader("chave-api-dados", "1d5r8yt963h2v4g5h6j3k138sbfiec21");
+
+        requisicao.send();
+
+    }
+
+
+
+    function listener() {
+
+        alert(this.responseText);
+
+    }
+
+</script>
+
+<html>
+
+<body id='bod'>
+
+<button type="submit" onclick="javascript:enviar()">call</button>
+
+<div id='div'></div>
+
+</body>
+
+</html>
